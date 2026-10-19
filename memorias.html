@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum de Fotos Offline</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <h1 class="titulo-album">ℳy Vibe𝜗ৎ</h1>
+    <div class="subtitulo-album">Aquilo que faz parte de mimᶻ 𝗓 𐰁</div>
+
+    <div class="album-container">
+        
+        <div class="foto-box" onclick="abrirModal('img/foto 1.jpg', 'The Best')">
+            <img src="img/foto 1.jpg" alt="Foto 1">
+            <div class="legenda">❤︎⁠˚˖𓍢ִ໋❀</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto 2.jpg', 'Os melhores')">
+            <img src="img/foto 2.jpg" alt="Foto 2">
+            <div class="legenda">❤︎⁠ Os mais mais</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto 3.jpg', '࣪ ִֶָ☾.')">
+            <img src="img/foto 3.jpg" alt="Foto 3">
+            <div class="legenda">;-;</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto 4.jpg', '▶︎ •၊၊||၊|။||||။‌‌‌‌‌၊|• 0:10')">
+            <img src="img/foto 4.jpg" alt="Foto 4">
+            <div class="legenda">Racionais'MCs</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto 5.jpg', '⋆.ೃ࿔🌸*:･')">
+            <img src="img/foto 5.jpg" alt="Foto 5">
+            <div class="legenda">Vibes</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto 6.jpg', 'Escutando música')">
+            <img src="img/foto 6.jpg" alt="Foto 6">
+            <div class="legenda">🎧ྀི</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto 7.jpeg', '𝑴𝒆𝒐𝒘. ฅ(•- •マ')">
+            <img src="img/foto 7.jpeg" alt="Foto 7">
+            <div class="legenda">Lulinha‧˚꒰🐾୭ ˚.</div>
+        </div>
+
+         <div class="foto-box" onclick="abrirModal('img/foto 8.jpg', '𓏭𓏭 🕸️My Mor🕸️∞')">
+            <img src="img/foto 8.jpg" alt="Foto 8">
+            <div class="legenda">𝓥andinha🦇</div>
+        </div>
+
+    </div> <audio controls autoplay loop class="musica-fundo">
+        <source src="audio/musica1.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <div class="container-botao-voltar">
+        <a href="index.html" class="botao-voltar">
+            <i class="fa-solid fa-arrow-left"></i> Voltar
+        </a>
+    </div>
+
+    <div class="modal" id="meuModal">
+        <span class="btn-fechar" onclick="fecharModal()">&times;</span>
+        <img id="imagemModal" src="" alt="Foto em tela cheia">
+        <div class="legenda-modal" id="textoModal"></div>
+    </div>
+
+</body>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+<script>
+  new window.VLibras.Widget(
+    'https://vlibras.gov.br/app',
+    'https://vlibras.gov.br/config/default_logo.json',
+    'random',
+    'R'
+  );
+</script>
+</html>
